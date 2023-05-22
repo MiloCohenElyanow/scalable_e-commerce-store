@@ -73,6 +73,11 @@ module.exports = {
     if( !user ) return res.status(401).json({msg: "un-authorized"})
     
     return res.status(200).json({ _id: user._id, email: user.email})
+  }, 
+
+  async ListUsers(req, res) { 
+    
+    
   }
 
 };
